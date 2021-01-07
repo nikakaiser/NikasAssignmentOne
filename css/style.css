@@ -29,6 +29,7 @@ p {
 
 nav {
     font-size: 20px; 
+    font-family: 'Squada One', cursive;
 }
 nav ul {
     justify-content: right;
