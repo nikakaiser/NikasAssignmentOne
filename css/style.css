@@ -9,36 +9,50 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Squada One', cursive;
-}
+    }
 
 h1 {
-    font-size: 48px;
-}
+    font-size: 70px;
+    }
 
 h2 {
     font-size: 36px;
-}
+    }
 
-h3 {
-    font-size: 28px;
+nav {
+    font-family: 'Squada One', cursive;
+    font-size: 20px; 
 }
-h4 {
-    font-size: 24px;
-}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+    }   
+nav li { padding: 10px 10px; }
+
+.container {
+    background: #fff, 60%; 
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    margin: 2em auto 0;
+    padding: 1.5em;
+  }
+  
+  p { margin-bottom: 1.5em; }
+  p:last-child { margin-bottom: 0; }
 
 blockquote {
     margin: 20px 60px;
     font-family: 'Spectral', serif;
-}
+    }
 
 footer {
     font-family: 'Spectral', serif;
     font-style: italic;
-}
+    }
 
 header {margin-bottom: 20px;}
 
-/* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
 a { 
@@ -53,16 +67,16 @@ a:hover { color: rgb(255, 255, 255); }
     grid-gap: 40px;
     width: 60%;
     margin: auto;
-}
+    }
 
 .grid div {
     padding: 20px;
-}
+    }
 
 @media only screen and (min-width:768px) {
 
-}
+    }
 
 @media only screen and (min-width:1224px) {
 
-}
+    }
