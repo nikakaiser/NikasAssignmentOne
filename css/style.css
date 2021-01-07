@@ -55,8 +55,7 @@ footer {
     }
 
 header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+   padding: 30px;
     }
 
 img { width: 100%; }
@@ -69,7 +68,7 @@ a:hover { color: rgb(255, 255, 255); }
 
 .grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     width: 90%;
     margin: auto;
