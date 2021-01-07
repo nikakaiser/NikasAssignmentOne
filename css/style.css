@@ -59,6 +59,17 @@ a {
      }
 a:hover { color: rgb(255, 255, 255); }
 
+div#pop-up {
+    display: none;
+    position: absolute;
+    width: 280px;
+    padding: 10px;
+    background: #eeeeee;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+  }
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -70,6 +81,11 @@ a:hover { color: rgb(255, 255, 255); }
 .grid div {
     padding: 20px;
     }
+
+#header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 @media only screen and (min-width:768px) {
 
