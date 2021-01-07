@@ -1,8 +1,10 @@
 /* Enter your Styles below! */
 
+
 body { 
-    font-family: 'Squada One', cursive;
+    font-family: 'Spectral', serif;
     font-size: 16px;
+    background-color: rgb(53, 49, 43);
      }
 
 h1, h2, h3, h4 {
@@ -26,7 +28,12 @@ h4 {
 
 blockquote {
     margin: 20px 60px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Spectral', serif;
+}
+
+footer {
+    font-family: 'Spectral', serif;
+    font-style: italic;
 }
 
 header {margin-bottom: 20px;}
@@ -49,7 +56,6 @@ a:hover { color: rgb(255, 255, 255); }
 }
 
 .grid div {
-    background-color: rgb(31, 25, 25);
     padding: 20px;
 }
 
