@@ -6,19 +6,17 @@ header, nav, main, footer {
 }
 
 body { 
-    font-family: 'BenchNine', sans-serif;
+    font-family: 'Spectral', serif;
     font-size: 16px;
-    color: whitesmoke; 
     background-color: rgb(53, 49, 43);
      }
 
 h1, h2, h3, h4 {
-    font-family: 'Langar', cursive;
+    font-family: 'Squada One', cursive;
     }
 
 h1 {
     font-size: 75px;
-    color: black;
     }
 
 h2 {
@@ -31,25 +29,16 @@ p {
 
 nav {
     font-size: 20px; 
-    font-family: 'BenchNine', sans-serif;
+    font-family: 'Squada One', cursive;
 }
-nav ol {
-    margin: 0;
-    padding: 0; 
+nav ul {
+    justify-content: right;
     }   
-nav li { 
-    padding: 10px;
-    display: inline;
-    float: right;
-    }
- li a {
-     display: block;
-     color: white;
-     text-align: center;
- }
+nav li { padding: 10px 10px; }
+ 
 
 footer {
-    font-family: 'BenchNine', sans-serif;
+    font-family: 'Spectral', serif;
     font-style: italic;
     text-align: center;
     margin-top: 30px; 
@@ -59,7 +48,6 @@ footer {
 
 header {
    padding: 30px;
-
     }
 
 img { 
@@ -68,7 +56,7 @@ img {
     }
 
 a { 
-    color: rgb(124, 255, 36);
+    color: rgb(40, 160, 3);
     text-decoration: none;
      }
 a:hover { color: rgb(255, 255, 255); }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>baby yoda</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;1,300&family=Squada+One&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+	<header>
+		<h1>GROGU</h1>
+		<h2>the cutest baby in the galaxy</h2>
+
+	<nav>
+		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
+		<ul>
+			<li><a href="subpage-one.html">memes</a></li>
+			<li><a href="#">mando</a></li>
+			<li><a href="#">more</a></li>
+		</ul>
+	</nav>
+</header>
+	<main>
+	<!-- Main content here -->
+		<div class="images">
+			<a href="#" class="trigger"><img src="https://media.nichegamer.com/wp-content/uploads/2019/11/24184554/Star-Wars-The-Mandalorian-11-24-2019.jpg"
+				alt="grogu in his pram"></a>
+    
+
+    <!-- HIDDEN / POP-UP DIV -->
+    <div id="pop-up">
+       <p>
+        HE'S SO CUTE!!
+	  </p> </div>
+	  
+    </div>
+<!--		<div><img src="https://media.nichegamer.com/wp-content/uploads/2019/11/24184554/Star-Wars-The-Mandalorian-11-24-2019.jpg"
+			 			alt="grogu in his pram"></div>
+		</div> -->
+		<div class="grid">
+			<p>"Grogu (colloquially known as "Baby Yoda" among fans and the media) is a character from the Star Wars Disney+ original television series The Mandalorian. He is an infant member of the same unnamed alien species as the Star Wars characters Yoda and Yaddle, with whom he shares a strong ability in the Force. In the series, the protagonist known as "The Mandalorian" is hired to track down and capture Grogu for a remnant of the fallen Galactic Empire, but instead, he becomes his adoptive father and protects him from the Imperials. The character's real name was not revealed until "Chapter 13: The Jedi", in which it is also explained that Grogu was raised at the Jedi Temple on Coruscant during the Clone Wars. Prior to this, the character's official name, as used in subtitles and captions, was "The Child".  </p>
+			<p>Grogu is mostly a work of animatronics and puppetry, although accentuated with computer-generated imagery. The puppet was designed by Legacy Effects and cost about $5 million to make. It is controlled by two technicians, one who operates the eyes and mouth and another who controls other facial expressions. The character's voice and sounds were created using a combination of adult and infant vocals, as well as recordings of a bat-eared fox and kinkajou. </p>
+		</div>	
+		</main>
+	<footer>
+		<!-- footer content here -->
+		&copy; not officially licensed by overlord disney
+	</footer>
+	<!-- link for jquery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+	<!-- <script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script> -->
+  	<!-- link for your script file -->
+	  <script src="js/script.js">
+	 $(function() {
+   var moveLeft = 20;
+   var moveDown = 10;
+
+   $('a.trigger').hover(function(e) {
+     $('div#pop-up').show();
+     //.css('top', e.pageY + moveDown)
+     //.css('left', e.pageX + moveLeft)
+     //.appendTo('body');
+   }, function() {
+     $('div#pop-up').hide();
+   });
+
+   $('a.trigger').mousemove(function(e) {
+     $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+   });
+
+ });
+	</script>
+</body>
+</html>
+
+<!-- 
+<div><img src="https://media1.popsugar-assets.com/files/thumbor/KNJ5lJR9zp9ZNvpZl-LNpbI4LAY/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/12/06/821/n/44498184/ddf48429d38cbe31_mando_105-1_3a338e00/i/Baby-Yoda-in-Mandalorian-Chapter-5.jpeg"
+	alt="grogu standing"></div>
+-->
