@@ -1,32 +1,41 @@
-header {
-    margin-top: 20px;
-}
-body {
-    background-color: rgb(13, 13, 63);
-    color: white;
-}
-p{
-    color: rgb(255, 255, 255);
-    line-height: normal;
-    padding-top: 20px;
-}
+.plax {
+    min-height: 100vh;
+    background: transparent;
+    }
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #fff; 
+    width:60%; 
+    margin: auto; 
+    padding-top: 80px;
+    }
 h1 {
-    font-size: 55px;
+    font-family: 'Caveat', cursive;
+    font-size: 100px;
     text-align: center;
 }
 h2 {
-    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
     text-align: center;
+    margin-top: -100px;
+}
+
+body {
+    background-color: black;
 }
 
 .story {
-    display: grid; 
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 150px 150px 150px 150px ;
+    font-size: 24px;
 }
 
 .narrarator {
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
+    font-size: 18px;
     text-align: center;
+    grid-column: 1/3;
     grid-column-end: span 2;
     place-self: center;
 }
@@ -39,8 +48,15 @@ h2 {
 .guy {
     text-align: left;
     grid-column-start: 1;
+    grid-row: 1 / span 2;
 }
 .felix{
     text-align: left;
     grid-column-start: 1;
 }
+
+.endnote {
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
+}
+
