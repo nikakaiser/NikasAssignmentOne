@@ -5,12 +5,17 @@
 
 p {
     font-family: 'IBM Plex Mono', monospace;
-    color: #fff; 
+    color: rgb(0, 0, 0); 
     width:60%; 
     margin: auto; 
     padding-top: 80px;
+    background-color: white, 0.5;
     }
-h1 {
+
+h1, h2 {
+    color: whitesmoke;
+}
+    h1 {
     font-family: 'Caveat', cursive;
     font-size: 100px;
     text-align: center;
@@ -19,7 +24,7 @@ h2 {
     font-family: 'Caveat', cursive;
     font-size: 35px;
     text-align: center;
-    margin-top: -100px;
+    margin-top: -90px;
 }
 
 body {
@@ -58,5 +63,16 @@ body {
 .endnote {
     font-family: 'IBM Plex Mono', monospace;
     font-style: italic;
+    font-size: 30px;
+    color: white;
+    margin-top: 300px;
 }
 
+.nar1, .nar2 {
+    color: white;
+}
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
 	<meta charset="UTF-8">
-	<title>Parallax</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="https://i.pinimg.com/originals/11/f4/90/11f490f709630c5ac00c56930928ee19.png">
+	<title>Johnny & Felix</title>
 	<style>
 		.plax {
     	min-height: 100vh;
@@ -12,6 +15,7 @@
 		p {color: #fff; width:60%; margin: auto; padding-top: 80px;}
 
 	</style>
+
 	 <link rel="preconnect" href="https://fonts.gstatic.com">
 	 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet"> 
 	 <link rel="stylesheet" href="css/style2.css">
@@ -41,40 +45,42 @@
 
 	<section class="plax parallax-window4" data-parallax="scroll">
 		<div class="story">
-			<p class="guy guy2">“Without cats? Do you hate cats that much? Cats can be mean and annoying but when you get used to them, they are adorable! However, to prove that to you, let’s try a place with cats all over the place for few days. Then you can go to the place you wanted to go, without cats. What do you think about that?“</p>
+			<p class="guy guy2">“Without cats? Do you hate cats that much? Cats can be mean and annoying but when you get used to them, they are adorable! To prove that to you, let’s send you to a place with cats all over the place. Then you can go where you wanted to go, without cats. What do you think about that?“</p>
 			<p class="johnny john2"> “okay”</p>
 		</div>
 	</section>
-	<section class="plax parallax-window4" data-parallax="scroll">
+	<section class="plax parallax-window5" data-parallax="scroll">
 		<div class="story">
-			<p class="narrarator nar4">And with that, Johnny was in a spaceship, off to a planet that was apparently filled with cats. When he landed, a human-sized cat standing on it’s hind legs came to the space-gate to greet him.</p>
+			<p class="narrarator nar4">And with that, Johnny was in a spaceship, off to a planet that was apparently filled with cats.</p>
 		</div>
 	</section>
 
-	<section class="plax parallax-window4" data-parallax="scroll">
+	<section class="plax parallax-window6" data-parallax="scroll">
 		<div class="story">
+			<p class="narrarator nar5">When he landed, a human-sized cat standing on it’s hind legs came to the space-gate to greet him.</p>
 			<p class="Felix"> “Hello Johnny, my name is Felix” </p>
-            <p class="johnny john3"> "Hi"</p>
-		</div>
-	</section>
-	<section class="plax parallax-window4" data-parallax="scroll">
-		<div class="story">
-            <p class="narrarator nar5">Although he would have rather gone somewhere without cats, he had never seen a human sized cat before, and he thought it was pretty cool. </p>
+			<p class="johnny john3"> "Hello Felix..."</p>
+			<p class="narrarator nar7">They shook hands, one human hand and one giant human-hand sized paw.</p>
+
 		</div>
 	</section>
 
 
 
 	<section style="height:800px;">
-		<p class="endnote"> to be continued...</p>
-	</section>
+			<p class="endnote">to be continued
+			<span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span>
+			</p> 
+		</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="parallax.js"></script>
 	<script>
-		$('.parallax-window1').parallax({imageSrc: 'images/dancingirl.png'});
-		$('.parallax-window2').parallax({imageSrc: 'http://placekitten.com/1200/600'});
-		$('.parallax-window3').parallax({imageSrc: 'http://placekitten.com/1201/600'});
-		$('.parallax-window4').parallax({imageSrc: 'http://placekitten.com/1201/601'});
+		$('.parallax-window1').parallax({imageSrc: 'https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'});
+		$('.parallax-window2').parallax({imageSrc: 'https://images.unsplash.com/photo-1496101813905-2dde51604269?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'});
+		$('.parallax-window3').parallax({imageSrc: 'https://images.pexels.com/photos/3932739/pexels-photo-3932739.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'});
+		$('.parallax-window4').parallax({imageSrc: 'https://images.unsplash.com/photo-1447969025943-8219c41ea47a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'});
+		$('.parallax-window5').parallax({imageSrc: 'https://images.pexels.com/photos/2163/sea-flight-sky-earth.jpg?auto=compress&cs=tinysrgb&h=750&w=1260'});
+		$('.parallax-window6').parallax({imageSrc: 'https://static9.depositphotos.com/1119834/1196/i/450/depositphotos_11968521-stock-photo-friends-concept.jpg'});
 	</script>
 </body>
 </html>
