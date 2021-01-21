@@ -25,7 +25,19 @@
 
 	<section class="plax parallax-window1" data-parallax="scroll">
 		<h1> Johnny & Felix</h1>
-        <h2> "the prologue"</h2>
+		<h2> "the prologue"</h2>
+		
+		<nav class="navbar">
+			<ol>				
+				<li><a href="#">0</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>			
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+			</ol>
+		</nav>
 	</section>
 
 	<section class="plax parallax-window2" data-parallax="scroll">
@@ -72,15 +84,30 @@
 			<span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span>
 			</p> 
 		</section>
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="parallax.js"></script>
 	<script>
+
+
 		$('.parallax-window1').parallax({imageSrc: 'https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'});
 		$('.parallax-window2').parallax({imageSrc: 'https://images.unsplash.com/photo-1496101813905-2dde51604269?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'});
 		$('.parallax-window3').parallax({imageSrc: 'https://images.pexels.com/photos/3932739/pexels-photo-3932739.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'});
 		$('.parallax-window4').parallax({imageSrc: 'https://images.unsplash.com/photo-1447969025943-8219c41ea47a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'});
 		$('.parallax-window5').parallax({imageSrc: 'https://images.pexels.com/photos/2163/sea-flight-sky-earth.jpg?auto=compress&cs=tinysrgb&h=750&w=1260'});
 		$('.parallax-window6').parallax({imageSrc: 'https://static9.depositphotos.com/1119834/1196/i/450/depositphotos_11968521-stock-photo-friends-concept.jpg'});
+	
 	</script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script>
+
+		var $navbar = $('.navbar');
+
+		$navbar.waypoint(funtion(){
+			$navbar.addClass('sticky');
+		})
+
+		</script>
 </body>
 </html>
