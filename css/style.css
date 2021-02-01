@@ -8,8 +8,19 @@ header, nav, main, footer {
 body { 
     font-family: 'BenchNine', sans-serif;
     font-size: 16px;
-    color: whitesmoke; 
-    background-color: rgb(53, 49, 43);
+    color: rgb(82, 72, 72); 
+    background-image: url('../images/fzm-seamless-notebook.texture-14.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+     }
+
+main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 30px;
+}
+header {
+    padding: 30px;
      }
 
 h1, h2, h3, h4 {
@@ -19,14 +30,20 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 75px;
     color: black;
+    grid-column-end: span 3;
     }
 
 h2 {
     font-size: 36px;
+    margin-top: 30pts;
     }
 
 p {
    line-height: normal; 
+}
+
+img {
+    width: 100%;
 }
 
 nav {
@@ -44,8 +61,34 @@ nav li {
     }
  li a {
      display: block;
-     color: white;
      text-align: center;
+ }
+ .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    grid-column-gap: 10px;
+    list-style-type: none;
+}
+.projects li{
+    display: grid;
+    padding: 20px;
+    grid-row-start: 2;
+    justify-items: center;
+    align-items: center;
+}
+ .assignments {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(10,10%);
+     grid-column-gap: 10px;
+     list-style-type: none;
+     justify-content: center;
+     align-content: center;
+ }
+ .assignments li{
+     padding: 20px;
+
  }
 
 footer {
@@ -57,44 +100,20 @@ footer {
     padding: 30px;
     }
 
-header {
-   padding: 30px;
-
-    }
-
 img { 
     width: 100%;
     padding: 15px;
     }
 
 a { 
-    color: rgb(124, 255, 36);
     text-decoration: none;
-     }
-a:hover { color: rgb(255, 255, 255); }
-
-div#pop-up {
-    display: none;
-    position: absolute;
-    width: 280px;
-    padding: 10px;
-    background: #eeeeee;
-    color: #000000;
-    border: 1px solid #1a1a1a;
-    font-size: 90%;
-  }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    width: 90%;
-    margin: auto;
+    color:black;
     }
 
-.grid div {
-    padding: 20px;
+a:hover { 
+    color: rgb(255, 255, 255);
     }
+
 
 
 @media only screen and (min-width:768px) {
@@ -104,3 +123,18 @@ div#pop-up {
 @media only screen and (min-width:1224px) {
 
     }
+
+@media only screen and (max-width:768px) {
+    .projects {
+        flex-direction: column;
+}
+    .assignments {
+            flex-direction: column;
+    }
+    main {
+        grid-template-columns: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
